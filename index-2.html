@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Grid</title>
+  <style>
+    .wrapper {
+      display: grid;
+      /*grid-template-columns: 1fr 1fr 1fr;*/
+      grid-template-columns: repeat(3 , 1fr);
+      /*grid-auto-rows: 100px;  fixed height*/
+      grid-auto-rows: minmax(100px ,auto); /* This one is to adjust any amount of text.*/
+    }
+
+    .nested {
+      display:grid;
+      grid-template-columns: repeat(3 , 1fr);
+      grid-auto-rows: minmax(50px,auto);
+    }
+
+    .wrapper >div{
+      background-color: #eee;
+      padding: 1em;
+    }
+
+    .wrapper > div:nth-child(odd) {
+      background-color: #ddd;
+    }
+
+    .nested > div{
+      border: 1px solid black;
+      padding: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel soluta eius nisi omnis assumenda aut veritatis suscipit dolor repellat. Voluptas at vel vero pariatur veniam fugiat odit quasi voluptatum consequuntur eligendi consequatur ducimus, facere magni culpa, minus fugit. Adipisci, deserunt.
+    </div>
+    <div class="nested"> /*nesting of grid within the grid */
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+      <div>Lorem</div>
+
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+    <div>
+      Lorem ipsum dolor sit.
+    </div>
+  </div>
+</body>
+</html>

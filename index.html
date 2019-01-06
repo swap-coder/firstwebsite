@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <style>
+
+    .wrapper{
+      display: grid;
+      grid-template-columns: 70% 30%;
+      /*grid-gap: 1em; OR */
+
+      grid-column-gap: 1em;
+      grid-row-gap: 1em;
+
+    }
+
+    .wrapper > div {
+      background-color: #eee;
+      padding: 1em;
+    }
+
+    .wrapper > div:nth-child(odd) {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi velit excepturi, quibusdam ipsum temporibus animi officiis commodi debitis dicta illo. Commodi vero saepe dignissimos, magni nesciunt atque possimus velit sunt expedita ad cum. Expedita facere officia cum ex debitis aut pariatur soluta quis quibusdam nulla iure assumenda ea quasi cumque aliquam, ab! Harum eveniet quis voluptates, nisi autem. Blanditiis consequuntur reprehenderit mollitia rem earum, quidem eius est natus tempore suscipit eveniet dolores at, perspiciatis ratione quia vero ex provident nesciunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolorem ut magnam at placeat laboriosam praesentium, laborum nisi, et vitae debitis, perferendis odio. Expedita alias, odit voluptatibus tempora. Mollitia, tempora.
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi velit excepturi, quibusdam ipsum temporibus animi officiis commodi debitis dicta illo. Commodi vero saepe dignissimos, magni nesciunt atque possimus velit sunt expedita ad cum. Expedita facere officia cum ex debitis aut pariatur soluta quis quibusdam nulla iure assumenda ea quasi cumque aliquam, ab! Harum eveniet quis voluptates, nisi autem. Blanditiis consequuntur reprehenderit mollitia rem earum, quidem eius est natus tempore suscipit eveniet dolores at, perspiciatis ratione quia vero ex provident nesciunt!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolorem ut magnam at placeat laboriosam praesentium, laborum nisi, et vitae debitis, perferendis odio. Expedita alias, odit voluptatibus tempora. Mollitia, tempora.
+    </div>
+
+  </div>
+
+</body>
+</html>
